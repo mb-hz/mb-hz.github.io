@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>London House Index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Use Montserrat Font for the entire page */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0; /* Reset margin to eliminate extra spacing */
+            padding: 0; /* Reset padding to eliminate extra spacing */
+        }
+
+        /* Style the header with a background color and padding */
+        header {
+            background-color: #1d2f4e; /* Change to your preferred color */
+            color: #fff; /* Title text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the main content with a container */
+        .container {
+            margin: 0 50px; /* Add a left and right margin */
+        }
+
+        /* Style headings and paragraphs */
+        h1, h2, h3, p {
+            margin-top: 20px; /* Add space between elements */
+        }
+
+        /* Style tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        /* Style table headers */
+        th {
+            background-color: #f2f2f2; /* Table header background color */
+            font-weight: 600;
+        }
+
+        /* Style table cells */
+        td {
+            border: 1px solid #ddd; /* Add borders to table cells */
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Style the disclaimer text */
+        .disclaimer {
+            text-align: center;
+            color: #1d2f4e; /* Disclaimer text color */
+            background-color: #f2f2f2; /* Disclaimer background color */
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Style the headings with color #1d2f4e and #4964a2 */
+        h2 {
+            color: #4964a2;
+        }
+        
+        h3 {
+            color: #4964a2;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>London House Index</h1>
+    </header>
+
+    <div class="container">
+        <h3>UK Inflation And London Rental, House Price Indexes</h3>
+        {{ chart_1 }}
+
+        <h3>London Rental and House Price Indexes (CPI Influence removed)</h3>
+        {{ chart_2 }}
+    </div>
+
+    <div class="container">
+        <p>London Rental Price Index<br>
+            <a href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/indexofprivatehousingrentalprices/previousReleases" target="_blank">https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/indexofprivatehousingrentalprices/previousReleases</a>
+        </p>
+        
+        <p>London House Price Index<br>
+            <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housepricestatisticsforsmallareas/previousReleases" target="_blank">https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housepricestatisticsforsmallareas/previousReleases</a><br>
+            <a href="https://www.gov.uk/government/collections/uk-house-price-index-reports" target="_blank">https://www.gov.uk/government/collections/uk-house-price-index-reports</a>
+        </p>
+    </div>
+    
+</body>
+</html>
